@@ -5,17 +5,16 @@
 
 import telebot
 
-API_TOKEN = '5853388804:AAGNLNgrhV3qr6oY8vxtLGpAWjDvPkREpZs'
+API_TOKEN = '7760078560:AAHTic43wy13C-e-fvdJi-jgvJVEA10oebI'
 
 bot = telebot.TeleBot(API_TOKEN)
 
 
 # Handle '/start' and '/help'
-@bot.message_handler(commands=['help', 'start'])
+@bot.message_handler(commands=['ajuda', 'start'])
 def send_welcome(message):
     bot.reply_to(message, """\
-Hi there, I am EchoBot.
-I am here to echo your kind words back to you. Just say anything nice and I'll say the exact same thing to you!\
+Menssagem de teste, apenas para testar o bot\
 """)
 
 
